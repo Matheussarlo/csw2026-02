@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body {
+    background-color: #f2f6ff;
+    font-family: Arial, sans-serif;
+    margin: 24px;
+    color:red
+}
+h1{
+    font-size: 2em;
+    color:white;
+    background-color: #4CAF50;
+
+}
+p{
+    font-size: 1em;
+    color: #333;
+}
+h2{
+    font-size: 1.5em;
+    color: #4CAF50;
+}

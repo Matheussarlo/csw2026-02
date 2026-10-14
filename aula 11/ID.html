@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links de música</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: #10131a;
+            color: #f4f4f5;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            text-align: center;
+        }
+
+        .introducao {
+            margin: 0 0 30px;
+            color: #c4c7d0;
+            text-align: center;
+        }
+
+        .secao {
+            width: min(100%, 700px);
+            margin: 20px auto;
+            padding: 24px;
+            border: 1px solid #3b4252;
+            border-radius: 14px;
+            background: #1b202b;
+        }
+
+        .secao + .secao {
+            border-color: #245a52;
+            background: #172823;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 16px;
+            border: 1px solid #8b91a1;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 150ms ease, background-color 150ms ease;
+        }
+
+        a::before {
+            content: ". ";
+        }
+
+        a::after {
+            content: " ♫";
+        }
+
+        a:hover {
+            background-color: #f4f4f5;
+            color: #10131a;
+        }
+
+        a:active {
+            background-color: #32c875;
+            color: #10131a;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #f4c95d;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha música</h1>
+    <p class="introducao">Escolha uma plataforma para ouvir suas músicas.</p>
+
+    <div class="secao">
+        <h2>Streaming de música</h2>
+        <div class="links">
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube Music</a>
+            <a href="https://music.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon Music</a>
+        </div>
+    </div>
+
+    <div class="secao">
+        <h2>Como funcionam os efeitos</h2>
+        <p>Passe o mouse sobre um link para mudar sua cor. Clique e segure para ver outra cor.</p>
+        <p>As notas musicais antes e depois do texto são adicionadas pelos pseudo-elementos <code>::before</code> e <code>::after</code>.</p>
+    </div>
+</body>
+</html>

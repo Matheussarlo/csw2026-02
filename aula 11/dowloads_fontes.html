@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Secret</title>
+
+  <style>
+  @font-face {
+  font-family: "LLCOOPER";
+  src: url("./fonts/LLCOOPER.ttf");
+}
+
+@font-face {
+  font-family: "TopSecretFont";
+  src: url("./fonts/TopSecret.ttf");
+}
+
+@font-face {
+        font-family:"gimme_danger";
+        src: url("./fonts/gimme_danger.ttf");
+}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #111, #2a2a2a);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-family: "TopSecretFont", sans-serif;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin: 0;
+      color: #ffdd57;
+    }
+
+    h2 {
+      font-family: "gimme_danger", sans-serif;
+      font-size: 2.5rem;
+      margin: 20px 0;
+      color: #ff8a65;
+    }
+
+    p {
+      font-family: "LLCOOPER", sans-serif;
+      font-size: 50px;
+      margin: 0 0 25px;
+      color: #db2205;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 14px 24px;
+      text-decoration: none;
+      background: #ffdd57;
+      color: #111;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #ffd11a;
+    }
+  </style>
+</head>
+<body>
+
+    <a href="./fonts/TopSecret.ttf" download class="download-btn">baixar fonte</a><h1>Top Secret</h1></a>
+    <a href="./fonts/gimme_danger.ttf" download class="download-btn"><h2>Gimme Danger</h2><h3>baixar fonte</h3></a>
+    <a href="./fonts/LLCOOPER.ttf" download class="download-btn"><p>LL Cooper</p>Baixar Fonte</a>
+</body>
+</html>
