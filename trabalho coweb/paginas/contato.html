@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato para solicitar uma proposta de desenvolvimento de site.">
+    <title>Contato | Meu Portfólio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">MEU<span>PORTFÓLIO</span></a>
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="github.html">GitHub</a>
+            <a href="servicos.html">Serviços</a>
+        </nav>
+        <a class="botao botao-menu ativo-botao" href="contato.html" aria-current="page">Contato</a>
+    </header>
+
+    <main class="conteudo-pagina">
+        <section class="cabecalho-pagina">
+            <h1>Contato</h1>
+            <p>Entre em contato para solicitar uma proposta de desenvolvimento de site.</p>
+            <h2>Numero de telefone</h2>
+            <p>(27) 99717-8813</p>
+            <h2>Gmail</h2>
+            <p>layrourp51@gmail.com</p>
+        </section>
+
+        <section class="secao contato-layout">
+            <div class="contato-intro">
+                <h2>Solicitação de serviço</h2>
+                <p>Por favor, preencha o formulário abaixo para solicitar a criação de um site.</p>
+            </div>
+
+            <form class="formulario" action="mailto:SEU_EMAIL_AQUI" method="post" enctype="text/plain">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="Nome completo" autocomplete="name" placeholder="Ex.: Ana Silva" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="Telefone" autocomplete="tel" placeholder="(00) 00000-0000" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="E-mail" autocomplete="email" placeholder="voce@exemplo.com" required>
+
+                <fieldset>
+                    <legend>Você está solicitando como</legend>
+                    <label class="opcao"><input type="radio" name="Tipo de cliente" value="Pessoa física" required> Pessoa física</label>
+                    <label class="opcao"><input type="radio" name="Tipo de cliente" value="Pessoa jurídica"> Pessoa jurídica</label>
+                </fieldset>
+
+                <label for="horario">Melhor horário para contato</label>
+                <select id="horario" name="Melhor horário" required>
+                    <option value="">Selecione um horário</option>
+                    <option>Manhã (8h às 12h)</option>
+                    <option>Tarde (12h às 18h)</option>
+                    <option>Noite (18h às 21h)</option>
+                    <option>Qualquer horário</option>
+                </select>
+
+                <label for="servico">Tipo de serviço desejado</label>
+                <select id="servico" name="Serviço desejado" required>
+                    <option value="">Selecione um serviço</option>
+                    <option>Site estático (1 a 2 páginas)</option>
+                    <option>Site estático (3 a 5 páginas)</option>
+                    <option>Site estático (mais de 5 páginas)</option>
+                    <option>Site dinâmico</option>
+                    <option>Site avançado ou personalizado</option>
+                    <option>Outro serviço</option>
+                </select>
+
+                <label for="descricao">Conte brevemente o que deseja contratar</label>
+                <textarea id="descricao" name="Descrição do projeto" rows="5" placeholder="Qual é o objetivo do site? Que informações ou recursos ele deve ter?" required></textarea>
+
+                <label class="opcao concordancia"><input type="checkbox" name="Autorização de contato" value="Sim" required> Autorizo o contato para responder a esta solicitação.</label>
+
+                <button class="botao" type="submit">Enviar formulário</button>
+                <p class="nota">O envio abre o programa de e-mail do seu computador. Este formulário não guarda os dados em um banco de dados.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 Matheus Rodrigues Sarlo · Portfólio acadêmico</p>
+        <a href="index.html">Voltar ao início</a>
+    </footer>
+</body>
+</html>
