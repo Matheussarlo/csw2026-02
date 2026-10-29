@@ -1,0 +1,39 @@
+
+body {
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    background: linear-gradient(to right, #235691,#113763,#1c3174 );
+      
+}
+
+button{
+    display: inline-block;
+    margin: 5px 3px;
+    padding: 8px 12px;
+    border: 1px solid #175c28;
+    background-color: #175c3f;
+    color: white;
+    text-decoration: 0.4s;
+}
+
+button:hover{
+    background-color: greenyellow;
+    color: white;
+}
+
+label{
+    color: white;
+    border-radius: 10px;
+}
+
+fieldset {
+  margin: 10px 20px 30px 40px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-color: rgb(red, green, blue);
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.562);
+  padding: 20px;
+}
+
